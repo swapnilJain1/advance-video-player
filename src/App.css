@@ -1,0 +1,109 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.video-container {
+  background-image: linear-gradient(to right bottom, #3d1a2b, #462a3e, #4d3a51, #544b62, #5c5c71, #585f74, #556375, #536676, #425d6a, #31545e, #224a50, #154141);
+  height: 100vh;
+  width: 100vw;
+}
+h2{
+  color: white;
+  position: absolute;
+  top: 179px;
+  left: 100px;
+}
+.video-container .container-body {
+  display: flex;
+  flex-direction: row;
+  max-width: 99%;
+  align-items: center;
+  justify-content: center;
+  margin: 130px auto;
+}
+.video-container .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.video-container .transcript-container {
+  max-width: 32vw;
+  overflow: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+  max-height: 50vh;
+  background-color: rgba(255, 255, 255, 0.34);
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-left: 10px;
+  line-height: 2;
+}
+.video-container .active {
+  color: rgb(255, 255, 0);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.video-container #video-container > div {
+  position: relative;
+}
+.video-container #video-container .seek-bar {
+  width: 94%;
+  position: absolute;
+  height: 4px;
+  background: #fff;
+  bottom: 5.5%;
+  z-index: 1;
+  left: 3%;
+  pointer-events: none;
+}
+.video-container #video-container .seek-bar.play {
+  opacity: 0;
+}
+.video-container #video-container .bubbles {
+  position: relative;
+}
+.video-container #video-container .bubbles::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background-color: #dc3545;
+  border-radius: 100%;
+  cursor: pointer;
+  top: -2px;
+}
+.video-container #video-container video:hover + .seek-bar {
+  opacity: 1;
+}
+.video-container h1 {
+  text-align: center;
+  color: aliceblue;
+  padding-top: 20px;
+}
+.video-container button {
+  padding: 3px 10px;
+  margin: 10px 45px;
+  margin-right: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  border-left: 4px solid gray;
+}
+.video-container button:hover {
+  color: white;
+  background-color: rgba(131, 127, 127, 0.308);
+}
+
+.transcriptUserName {
+  color: rgba(96, 95, 95, 0.913);
+  font-weight: 700;
+}
+
+.flag-container{
+  position: absolute;
+  top: 240px;
+  right: -30px;
+  color: white;
+}
+.meeting-title{
+  color: rgba(255, 255, 255, 0.484);
+}

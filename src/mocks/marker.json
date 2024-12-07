@@ -1,0 +1,17 @@
+[
+    {
+        "to": 0,
+        "title": "Greeting"
+    },
+    {
+        "to": 8,
+        "title": "Agenda 1 - Project update"
+    },
+    {
+        "to": 17,
+        "title": "Agenda 2 - Planning"
+    },
+    {
+        "to": 31,
+        "title": "Agenda 3 - Importance of collaboration"
+    }]
